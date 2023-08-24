@@ -1,5 +1,5 @@
 {
-  "name": "speed-cf",
+  "name": "speedtestwithcloudflare",
   "version": "3.0.0",
   "description": "Measure the speed and consistency of your internet connection using speed.cloudflare.com",
   "main": "cli.js",
