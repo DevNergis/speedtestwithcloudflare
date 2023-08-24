@@ -1,0 +1,48 @@
+{
+  "name": "speedtestwithcloudflare",
+  "version": "3.0.0",
+  "description": "Measure the speed and consistency of your internet connection using speed.cloudflare.com",
+  "main": "cli.js",
+  "bin": {
+    "speed-cf": "./cli.js"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "echo Done.",
+    "build": "npx pkg -t linux,macos,win -C Brotli . --out-path dist",
+    "build:x64": "npx pkg -t linux-x64,macos-x64,win-x64 -C Brotli . --out-path dist && mv dist/speedtestwithcloudflare-linux dist/speedtestwithcloudflare-linux-x64 && mv dist/speedtestwithcloudflare-macos dist/speedtestwithcloudflare-macos-x64 && mv dist/speedtestwithcloudflare-win.exe dist/speedtestwithcloudflare-win-x64.exe",
+    "build:arm64": "npx pkg -t linux-arm64,macos-arm64,win-arm64 -C Brotli . --out-path dist && mv dist/speedtestwithcloudflare-linux dist/speedtestwithcloudflare-linux-arm64 && mv dist/speedtestwithcloudflare-macos dist/speedtestwithcloudflare-macos-arm64 && mv dist/speedtestwithcloudflare-win.exe dist/speedtestwithcloudflare-win-arm64.exe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Nergis/speed-cf.git"
+  },
+  "keywords": [
+    "bandwidth",
+    "connection",
+    "download",
+    "internet",
+    "latency",
+    "network",
+    "ping",
+    "speed",
+    "speedtest",
+    "test",
+    "upload"
+  ],
+  "author": "Dev_Nergis <admin@textcord.xyz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dev-Nergis/speed-cf/issues"
+  },
+  "homepage": "https://github.com/Dev-Nergis/speed-cf#readme",
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  },
+  "node_deb": {
+    "init": "none",
+    "entrypoints": {
+      "cli": "cli.js"
+    }
+  }
+}
