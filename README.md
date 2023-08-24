@@ -1,5 +1,5 @@
 <h1 align="center">
-  <code>speed-cloudflare-cli</code>
+  <code>speed-cloudflare-cli</code><p>with binary compiler</p>
 </h1>
 <h3 align="center">
   Measure the speed and consistency of your internet connection using <a href="https://speed.cloudflare.com/">speed.cloudflare.com</a>
@@ -20,7 +20,7 @@
 </p>
 
 # How to use
-Download [Latest Releases](https://github.com/Dev-Nergis/speed-cf/releases/latest)
+Download [Latest Releases](https://github.com/DevNergis/speedtestwithcloudflare/releases/latest)
 With Out Nodejs
 
 # Original code is https://github.com/KNawm/speed-cloudflare-cli
